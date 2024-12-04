@@ -18,8 +18,8 @@ function Top_teachers() {
       description:
         "Achieved an IELTS score of 7.5, CELTA certified, and has 6 years of experience mentoring students for their exams.",
       images: [
-        "/musayev-Ielts.png",
-        "/musayev-Celta.png",
+        "/Musayev-Ielts.png",
+        "/Musayev-Celta.png",
       ],
     },
     {
@@ -27,8 +27,8 @@ function Top_teachers() {
       description:
         "IELTS score of 7.0, CELTA certified, with 4+ years of experience in preparing students for international exams.",
       images: [
-        "/sugdiona-Ielts.png",
-        "/sugdiona-Celta.png",
+        "/Sugdiona-Ielts.png",
+        "/Sugdiona-Celta.png",
       ],
     },
     {
@@ -84,13 +84,13 @@ function Top_teachers() {
                   src={teacher.images[currentImages[index]]}
                 />
                 <div className="flex mt-4">
-                  <button
+                  {/* <button
                     onClick={() => toggleImage(index)}
                     className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
                     aria-label={`Toggle certificate image for ${teacher.name}`}
                   >
                     Other Certificate
-                  </button>
+                  </button> */}
                 </div>
               </div>
 
