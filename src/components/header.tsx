@@ -143,7 +143,8 @@ function Header() {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYOr5sVXwSXpG3j1rBp_Hb7IDY60u55dwEw&s"
             alt="Rotating Logo"
-            className="w-[200px] h-[200px] rounded-full border-4 border-indigo-500 animate-spin duration-10s"
+            className="w-[200px] h-[200px] rounded-full border-4 border-indigo-500"
+            style={{ animation: "spin 5s linear infinite" }}
           />
         </div>
 
@@ -163,7 +164,7 @@ function Header() {
         .animate-scroll-left-to-right {
           display: inline-block;
           white-space: nowrap;
-          animation: scrollLeftToRight 10s linear infinite;
+          animation: scrollLeftToRight 12s linear infinite;
         }
 
         @keyframes scrollLeftToRight {

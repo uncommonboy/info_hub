@@ -80,17 +80,11 @@ function Top_teachers() {
               <div className="lg:w-1/2 w-full flex flex-col items-center">
                 <img
                   alt={teacher.name}
-                  className="lg:w-full w-3/4 lg:h-auto object-cover object-center rounded aspect-[4/3]"
+                  className=" object-contain lg:w-full w-3/4 lg:h-auto  object-center rounded aspect-[4/3]"
                   src={teacher.images[currentImages[index]]}
                 />
                 <div className="flex mt-4">
-                  {/* <button
-                    onClick={() => toggleImage(index)}
-                    className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
-                    aria-label={`Toggle certificate image for ${teacher.name}`}
-                  >
-                    Other Certificate
-                  </button> */}
+                  
                 </div>
               </div>
 

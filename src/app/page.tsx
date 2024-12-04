@@ -14,10 +14,12 @@ export default function Home() {
       }}
     >
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <section className="text-white body-font relative"> {/* Set text color to white */}
+        <section className="text-white body-font relative">
+          {" "}
+          {/* Set text color to white */}
           {/* Adding a blur overlay */}
-          <div className="absolute inset-0 bg-black opacity-50 backdrop-blur-lg z-0"></div> {/* Overlay with blur effect */}
-
+          <div className="absolute inset-0 bg-black opacity-50 backdrop-blur-lg z-0"></div>{" "}
+          {/* Overlay with blur effect */}
           <div className="container px-5 py-24 mx-auto flex flex-col relative z-10">
             <div className="lg:w-9/5 mx-auto">
               <div className="rounded-lg">
@@ -26,7 +28,11 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                   <div>
-                    <img className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400" src="/logoMain.png" alt="" />
+                    <img
+                      className="w-20 h-20 rounded-full object-contain inline-flex items-center justify-center bg-gray-200"
+                      src="/logoMain.png"
+                      alt="Logo"
+                    />
                   </div>
                   <div className="flex flex-col items-center text-center justify-center">
                     <h2 className="font-medium title-font mt-4 text-white text-lg">
@@ -34,7 +40,8 @@ export default function Home() {
                     </h2>
                     <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                     <p className="text-white text-base">
-                      "Guiding Ambitious Minds Towards Global Success, One Step at a Time."
+                      "Guiding Ambitious Minds Towards Global Success, One Step
+                      at a Time."
                     </p>
                   </div>
                 </div>
@@ -54,10 +61,11 @@ export default function Home() {
                     you unlock your full potential and take the first step
                     toward an exciting future abroad.
                   </p>
-                  <a href="/all-about" className="text-indigo-500 inline-flex items-center">
-                   <b>
-                   Learn More
-                   </b>
+                  <a
+                    href="/all-about"
+                    className="text-indigo-500 inline-flex items-center"
+                  >
+                    <b>Learn More</b>
                     <svg
                       fill="none"
                       stroke="currentColor"
