@@ -57,11 +57,15 @@ function Top_teachers() {
   );
 
   // Function to toggle the image for a specific teacher
-  const toggleImage = (index) => {
+  const toggleImage = (index: number) => {
     setCurrentImages((prev) =>
-      prev.map((img, i) => (i === index ? (img === 0 ? 1 : 0) : img))
+      prev.map((img, i) => {
+        const totalImages = teachers[index].images.length;
+        return i === index && totalImages > 1 ? (img + 1) % totalImages : img;
+      })
     );
   };
+  
 
   return (
     <div>
@@ -76,13 +80,14 @@ function Top_teachers() {
               <div className="lg:w-1/2 w-full flex flex-col items-center">
                 <img
                   alt={teacher.name}
-                  className="lg:w-full w-3/4 lg:h-auto h-64 object-cover object-center rounded"
+                  className="lg:w-full w-3/4 lg:h-auto object-cover object-center rounded aspect-[4/3]"
                   src={teacher.images[currentImages[index]]}
                 />
                 <div className="flex mt-4">
                   <button
                     onClick={() => toggleImage(index)}
                     className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+                    aria-label={`Toggle certificate image for ${teacher.name}`}
                   >
                     Other Certificate
                   </button>
@@ -98,9 +103,17 @@ function Top_teachers() {
                   {teacher.name}
                 </h1>
                 <p className="leading-relaxed mb-4">{teacher.description}</p>
-                <button className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
-                  Learn More
-                </button>
+                <div className="flex items-center space-x-4 mt-4">
+                  <button className="text-white bg-blue-500 py-2 px-6 rounded hover:bg-blue-600">
+                    Learn More
+                  </button>
+                  <button
+                    onClick={() => toggleImage(index)}
+                    className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+                  >
+                    Other Certificate
+                  </button>
+                </div>
               </div>
             </div>
           ))}
