@@ -19,7 +19,7 @@ function Header() {
   return (
     <div>
       <header className="text-gray-600 body-font overflow-hidden">
-        <div className="container mx-auto flex items-center justify-between p-5 flex-col sm:flex-row">
+        <div className="container mx-auto flex items-center justify-between p-5  sm:flex-row">
           {/* Logo */}
           <a
             href="/"
@@ -33,14 +33,6 @@ function Header() {
           </a>
 
           {/* Animated Motto */}
-          <div className="flex-grow overflow-hidden mx-4 relative mb-4 sm:mb-0">
-            <h2 className="relative overflow-hidden">
-              <span className="text-lg font-semibold text-gray-800 animate-scroll-marquee whitespace-nowrap speed: inline-block px-4 sm:px-8 w-full">
-                "Empowering Young Minds Through Knowledge, Discipline, and
-                Growth for a Brighter Future."
-              </span>
-            </h2>
-          </div>
 
           {/* Menu Button */}
           <button
@@ -54,6 +46,14 @@ function Header() {
             )}
             <span className="ml-2 hidden sm:inline">Menu</span>
           </button>
+        </div>
+        <div className="flex-grow overflow-hidden mx-4 relative mb-4 sm:mb-0">
+          <h2 className="relative overflow-hidden">
+            <span className="text-lg font-semibold text-gray-800 animate-scroll-marquee whitespace-nowrap speed: inline-block px-4 sm:px-8 w-full">
+              "Empowering Young Minds Through Knowledge, Discipline, and Growth
+              for a Brighter Future."
+            </span>
+          </h2>
         </div>
       </header>
 
