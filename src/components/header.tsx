@@ -35,7 +35,7 @@ function Header() {
           {/* Animated Motto */}
           <div className="flex-grow overflow-hidden mx-4 relative mb-4 sm:mb-0">
             <h2 className="relative overflow-hidden">
-              <span className="text-lg font-semibold text-gray-800 animate-scroll-marquee whitespace-nowrap inline-block px-4 sm:px-8 w-full">
+              <span className="text-lg font-semibold text-gray-800 animate-scroll-marquee whitespace-nowrap speed: inline-block px-4 sm:px-8 w-full">
                 "Empowering Young Minds Through Knowledge, Discipline, and
                 Growth for a Brighter Future."
               </span>
@@ -144,7 +144,7 @@ function Header() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYOr5sVXwSXpG3j1rBp_Hb7IDY60u55dwEw&s"
             alt="Rotating Logo"
             className="w-[200px] h-[200px] rounded-full border-4 border-indigo-500"
-            style={{ animation: "spin 5s linear infinite" }}
+            style={{ animation: "spin 3s linear infinite" }}
           />
         </div>
 

@@ -1,5 +1,9 @@
-'use client'
+"use client";
 import React, { useState } from "react";
+import {
+  AcademicCapIcon,
+  ArrowsRightLeftIcon,
+} from "@heroicons/react/24/solid";
 
 function Top_teachers() {
   // Data for teachers
@@ -8,28 +12,19 @@ function Top_teachers() {
       name: "Temurbek Rakhimjanov",
       description:
         "IELTS score of 8.0, CELTA certified, with over 12 years of experience in teaching. He specializes in advanced language skills.",
-      images: [
-        "/Temur-Ielts.png",
-        "/Temur-Celta.png",
-      ],
+      images: ["/Temur-Ielts.png", "/Temur-Celta.png"],
     },
     {
       name: "Musayev Bekhzod",
       description:
         "Achieved an IELTS score of 7.5, CELTA certified, and has 6 years of experience mentoring students for their exams.",
-      images: [
-        "/Musayev-Ielts.png",
-        "/Musayev-Celta.png",
-      ],
+      images: ["/Musayev-Ielts.png", "/Musayev-Celta.png"],
     },
     {
       name: "Sugdiona Isroilova",
       description:
         "IELTS score of 7.0, CELTA certified, with 4+ years of experience in preparing students for international exams.",
-      images: [
-        "/Sugdiona-Ielts.png",
-        "/Sugdiona-Celta.png",
-      ],
+      images: ["/Sugdiona-Ielts.png", "/Sugdiona-Celta.png"],
     },
     {
       name: "Shamsiddinov Sayfullo",
@@ -65,7 +60,6 @@ function Top_teachers() {
       })
     );
   };
-  
 
   return (
     <div>
@@ -83,9 +77,7 @@ function Top_teachers() {
                   className=" object-contain lg:w-full w-3/4 lg:h-auto  object-center rounded aspect-[4/3]"
                   src={teacher.images[currentImages[index]]}
                 />
-                <div className="flex mt-4">
-                  
-                </div>
+                <div className="flex mt-4"></div>
               </div>
 
               {/* Right: Description */}
@@ -98,14 +90,15 @@ function Top_teachers() {
                 </h1>
                 <p className="leading-relaxed mb-4">{teacher.description}</p>
                 <div className="flex items-center space-x-4 mt-4">
-                  <button className="text-white bg-blue-500 py-2 px-6 rounded hover:bg-blue-600">
+                  {/* <button className="text-white bg-blue-500 py-2 px-6 rounded hover:bg-blue-600">
                     Learn More
-                  </button>
+                  </button> */}
                   <button
                     onClick={() => toggleImage(index)}
-                    className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+                    className="px-4 py-2 text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded hover:from-indigo-600 hover:to-blue-500 flex items-cesnter gap-2 shadow-lg"
                   >
-                    Other Certificate
+                    <AcademicCapIcon className="h-5 w-5 text-white" />
+                    Certificate
                   </button>
                 </div>
               </div>
